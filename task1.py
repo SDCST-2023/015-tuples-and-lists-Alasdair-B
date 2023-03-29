@@ -25,6 +25,6 @@ The animal at that index is Dog
 
 
 animals = ['Cat', 'Fish', 'Dog', 'Bear', 'Turtle']
-animals.sort
-x = int(input("Enter an integer corresponding to the index of an element"))
+animals.sort()
+x = int(input("Enter an integer corresponding to the index of an element:\n"))
 print(animals[x])

@@ -23,5 +23,18 @@ Enter an integer:-1
 
 The largest number you entered is 92
 """
+import math
+numbers=[]
+def Input():
+    for i in range(0,10):
+        n = int(input(f"Enter a positive integer ({(10-(i))} spaces remaining), if you have no more numbers to enter, input '-1': "))
+        if n == -1:
+            return
+        else:
+            numbers.append(int(n))
 
 
+
+Input()
+numbers.sort(reverse=True)
+print(f"The largest number you entered is {numbers[0]}")
